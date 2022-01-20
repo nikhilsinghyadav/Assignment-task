@@ -1,0 +1,68 @@
+<!-- 
+<div class="container">
+ <div class="row" style="padding:45px;text-align:center">
+<div class="col-6 bg-warning">
+  
+ <h1>{{title1}}</h1>  
+ <input type="text" placeholder="Enter New Task" #task /> <br /> <br />
+ <button (click)="addTask(task.value)">Add New task</button> <br /> <br />
+
+   <div *ngFor="let item of list">
+    <div class="row bg-light border">
+      <div class="col" style="text-align:left;padding:5px;">{{item.name}} </div>
+<div class="col" style="text-align:right;padding:5px;"> <button (click)="removeTask(item.id)">Remove</button></div>
+</div>
+</div> 
+</div>
+
+<div class="col bg-warning" style="margin: 5px;">
+    <h1>{{ title2 }}</h1>
+    <div class="row">
+        <div class="col" style="text-align: left;"><input type="number" placeholder="" value="{{usd}}"  (keyup)="changeToInr($event)"/></div>
+        <div class="col" style="text-align: center;">USD</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col" style="text-align: left;"><input type="number" placeholder="" value="{{inr}}" (keyup)="changeToUsd($event)"/></div>
+        <div class="col" style="text-align: center;">INR</div>
+    </div>
+    <br>
+    <br>
+    </div>
+</div>
+</div> 
+ -->
+ <div class="container" >
+    <div class="row bg-dark" style="padding: 45px;margin:30px">
+    <div class="col bg-warning" style="margin: 5px;">
+    <h1>{{ title1 }}</h1>
+    <input type="text" placeholder="Enter New Item" #item />
+    <br>
+    <br>
+    <button (click)="addItem(item.value)">Add New Item</button>
+    <br>
+    <br>
+    <div *ngFor="let item of list" >
+    <div class="row bg-light border">
+        <div class="col" style="text-align: left;">{{item.name}}</div><div class="col" style="text-align: right;padding: 5px;"><button (click)="removeItem(item.id)">Remove</button></div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col bg-warning" style="margin: 5px;">
+    <h1>{{ title2 }}</h1>
+    <div class="row">
+        <div class="col" style="text-align: left;"><input type="number" placeholder="" value="{{usd}}"  (keyup)="changeToInr($event)"/></div>
+        <div class="col" style="text-align: center;">USD</div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col" style="text-align: left;"><input type="number" placeholder="" value="{{inr}}" (keyup)="changeToUsd($event)"/></div>
+        <div class="col" style="text-align: center;">INR</div>
+    </div>
+    <br>
+    <br>
+    </div>
+    
+    </div>
+    </div>
